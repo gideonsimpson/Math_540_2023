@@ -1,6 +1,6 @@
 LIBS = -lgsl -lm
 LDFLAGS = -L/Users/grs53/miniconda3/lib
-CFLAGS = -Wall -O2 -I/Users/grs53/miniconda3/include
+CFLAGS = -Wall -O2 
 INCLUDES = 
 CC = clang
 

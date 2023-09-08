@@ -1,8 +1,8 @@
 LIBS = -lgsl -lm
-LDFLAGS = -L/Users/grs53/miniconda3/lib
-CFLAGS = -Wall -O2 
-INCLUDES = 
-CC = clang
+LDFLAGS = -L/Users/grs53/miniconda3/lib # change these as appropriate
+INCLUDES = -I/Users/grs53/miniconda3/include
+CFLAGS = -Wall -O2 ${INCLUDES}
+CC = clang  # change to gcc if needed
 
 all: timing_test
 

@@ -20,3 +20,14 @@ function assemble_matrix(n, Δx)
 
     return A
 end
+
+using SparseArrays
+
+function assemble_spmatrix(n, Δx)
+    # build matrix
+    A = spdiagm(0 => -2 * ones(n-1) / Δx^2,
+        -1 => ones(n - 2) / Δx^2,
+        1 => ones(n - 2) / Δx^2)
+
+    return A
+end

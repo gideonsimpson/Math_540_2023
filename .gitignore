@@ -12,6 +12,9 @@ log.*
 # Python Files
 *.pyc
 
+# C Files
+*.o 
+
 # Julia data files
 *.jld
 

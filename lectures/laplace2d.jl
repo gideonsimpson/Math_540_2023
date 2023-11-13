@@ -33,7 +33,7 @@ function assemble_laplace_box_rhs!(B, gN, gS, gE, gW, x, y)
     # j = ny, north
     j = ny;
     for i in 2:nx-1
-        B[i+nx*(j-1)] = 1 / Δy^2 * gS(x[i])
+        B[i+nx*(j-1)] = 1 / Δy^2 * gN(x[i])
     end
 
     # i = 1, west
